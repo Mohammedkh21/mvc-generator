@@ -1,0 +1,24 @@
+{
+    "name": "mohammedkh21/mvc-generator",
+    "description": "make mvc generator",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mohammedkh21\\MvcGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "Laravel":{
+            "providers":[
+                "Mohammedkh21\\MvcGenerator\\MvcServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohammed Khalaf",
+            "email": "Kh21mohammed@gmail.com"
+        }
+    ],
+    "require": {}
+}
