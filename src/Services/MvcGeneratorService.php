@@ -14,7 +14,8 @@ class MvcGeneratorService
 
     public function route()
     {
-        $routeContents = "Route::resource('" . strtolower(Str::plural($this->name)) . "', \App\Http\Controllers\\" . str_replace('/','\\',$this->name) . "Controller::class);\n";
+        $routeName = explode('/',strtolower(Str::plural($this->name)));
+        $routeContents = "Route::resource('" . end($routeName) . "', \App\Http\Controllers\\" . str_replace('/','\\',$this->name) . "Controller::class);\n";
         file_put_contents(base_path('routes/web.php'), $routeContents, FILE_APPEND);
     }
 
