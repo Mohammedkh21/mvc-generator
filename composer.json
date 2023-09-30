@@ -2,6 +2,7 @@
     "name": "mohammedkh21/mvc-generator",
     "description": "make mvc generator",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Mohammed Khalaf",
